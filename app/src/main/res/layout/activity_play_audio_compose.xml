@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".AudioActivity">
+
+    <ToggleButton
+        android:id="@+id/audio_direct_button_id"
+        android:text="@string/audio_acg_text_on"
+        android:textOn="@string/audio_acg_text_off"
+        android:textOff="@string/audio_acg_text_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <fragment android:name="com.acg.lib.impl.PlayAudioACG"
+              android:id="@id/play_audio_acg_fragment_id"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+</LinearLayout>

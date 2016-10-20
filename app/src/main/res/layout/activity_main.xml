@@ -1,0 +1,562 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+        <!-- Toggle validation options -->
+
+        <CheckBox
+            android:id="@+id/toggle_progclick_validation_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_progclick_validation"/>
+
+        <CheckBox
+            android:id="@+id/toggle_motion_event_validation_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_motion_event_validation"/>
+
+        <CheckBox
+            android:id="@+id/toggle_filter_obscured_validation_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_filter_obscured_validation"/>
+        
+        <CheckBox
+            android:id="@+id/toggle_button_validation_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_button_validation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/validation_interval_picker"/>
+
+        <NumberPicker
+            android:id="@+id/validation_interval_picker_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invalidation_length"/>
+
+        <NumberPicker
+            android:id="@+id/invalidation_length_picker_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Good reference activities -->
+
+        <Button
+                android:id="@+id/location_switch"
+                android:text="@string/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="location"
+                />
+
+        <Button
+                android:id="@+id/audio_switch"
+                android:text="@string/audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="audio"/>
+
+        <!-- Simple activities -->
+
+        <Button
+                android:id="@+id/prog_click_location_switch"
+                android:text="@string/prog_click_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickLocation"/>
+
+        <Button
+                android:id="@+id/prog_click_audio_switch"
+                android:text="@string/prog_click_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickAudio"
+                />
+
+        <Button
+                android:id="@+id/prog_click_indirect_location_switch"
+                android:text="@string/prog_click_indirect_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickIndirectLocation"
+                />
+
+        <Button
+                android:id="@+id/prog_click_indirect_audio_switch"
+                android:text="@string/prog_click_indirect_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickIndirectAudio"
+                />
+
+        <Button
+                android:id="@+id/prog_click_cheating_location_switch"
+                android:text="@string/prog_click_cheating_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickCheatingLocation"
+                />
+
+        <Button
+                android:id="@+id/prog_click_cheating_audio_switch"
+                android:text="@string/prog_click_cheating_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="progClickCheatingAudio"
+                />
+
+        <!-- Complex activities -->
+
+        <Button
+                android:id="@+id/very_indirect_location_switch"
+                android:text="@string/very_indirect_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectLocation"
+                />
+
+        <Button
+                android:id="@+id/very_indirect_audio_switch"
+                android:text="@string/very_indirect_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectAudio"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_location_switch"
+                android:text="@string/super_cheating_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingLocation"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_audio_switch"
+                android:text="@string/super_cheating_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingAudio"
+                />
+
+        <!-- Simple activities with outside listeners -->
+
+        <Button
+                android:id="@+id/indirect_outside_location_switch"
+                android:text="@string/indirect_outside_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="indirectOutsideLocation"
+                />
+
+        <Button
+                android:id="@+id/indirect_outside_audio_switch"
+                android:text="@string/indirect_outside_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="indirectOutsideAudio"
+                />
+
+        <Button
+                android:id="@+id/cheating_outside_location_switch"
+                android:text="@string/cheating_outside_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cheatingOutsideLocation"
+                />
+
+        <Button
+                android:id="@+id/cheating_outside_audio_switch"
+                android:text="@string/cheating_outside_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cheatingOutsideAudio"
+                />
+
+        <!-- Complex activities with outside listeners -->
+
+        <Button
+                android:id="@+id/very_indirect_outside_location_switch"
+                android:text="@string/very_indirect_outside_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectOutsideLocation"
+                />
+
+        <Button
+                android:id="@+id/very_indirect_outside_audio_switch"
+                android:text="@string/very_indirect_outside_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectOutsideAudio"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_outside_location_switch"
+                android:text="@string/super_cheating_outside_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingOutsideLocation"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_outside_audio_switch"
+                android:text="@string/super_cheating_outside_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingOutsideAudio"
+                />
+
+        <!-- Simple activities overriding the ACG -->
+
+        <Button
+                android:id="@+id/override_location_switch"
+                android:text="@string/override_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="overrideLocation"
+                />
+
+        <Button
+                android:id="@+id/override_audio_switch"
+                android:text="@string/override_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="overrideAudio"
+                />
+
+        <Button
+                android:id="@+id/indirect_override_location_switch"
+                android:text="@string/indirect_override_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="indirectOverrideLocation"
+                />
+
+        <Button
+                android:id="@+id/indirect_override_audio_switch"
+                android:text="@string/indirect_override_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="indirectOverrideAudio"
+                />
+
+        <Button
+                android:id="@+id/cheating_override_location_switch"
+                android:text="@string/cheating_override_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cheatingOverrideLocation"
+                />
+
+        <Button
+                android:id="@+id/cheating_override_audio_switch"
+                android:text="@string/cheating_override_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cheatingOverrideAudio"
+                />
+
+        <!-- Complex activities overriding the ACG -->
+
+        <Button
+                android:id="@+id/very_indirect_override_location_switch"
+                android:text="@string/very_indirect_override_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectOverrideLocation"
+                />
+
+        <Button
+                android:id="@+id/very_indirect_override_audio_switch"
+                android:text="@string/very_indirect_override_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryIndirectOverrideAudio"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_override_location_switch"
+                android:text="@string/super_cheating_override_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingOverrideLocation"
+                />
+
+        <Button
+                android:id="@+id/super_cheating_override_audio_switch"
+                android:text="@string/super_cheating_override_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="superCheatingOverrideAudio"
+                />
+
+        <!-- Clickjacking -->
+
+        <Button
+            android:id="@+id/cover_button_location_switch"
+            android:text="@string/cover_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="coverButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/cover_button_audio_switch"
+            android:text="@string/cover_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="coverButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/transparent_button_location_switch"
+            android:text="@string/transparent_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="transparentButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/transparent_button_audio_switch"
+            android:text="@string/transparent_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="transparentButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/disguise_button_location_switch"
+            android:text="@string/disguise_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="disguiseButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/disguise_button_audio_switch"
+            android:text="@string/disguise_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="disguiseButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/small_button_location_switch"
+            android:text="@string/small_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="smallButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/small_button_audio_switch"
+            android:text="@string/small_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="smallButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/bottom_button_location_switch"
+            android:text="@string/bottom_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bottomButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/bottom_button_audio_switch"
+            android:text="@string/bottom_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bottomButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/timing_button_location_switch"
+            android:text="@string/timing_button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="timingButtonLocation"
+            />
+
+        <Button
+            android:id="@+id/timing_button_audio_switch"
+            android:text="@string/timing_button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="timingButtonAudio"
+            />
+
+        <Button
+            android:id="@+id/location_direct_switch"
+            android:text="@string/location_direct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="locationDirect"
+            />
+
+        <Button
+            android:id="@+id/wrapped_location_direct_switch"
+            android:text="@string/wrapped_location_direct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrappedLocationDirect"
+            />
+
+        <Button
+            android:id="@+id/audio_direct_switch"
+            android:text="@string/audio_direct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="audioDirect"
+            />
+
+        <Button
+            android:id="@+id/audio_compose_switch"
+            android:text="@string/audio_compose_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="audioCompose"
+            />
+
+        <Button
+            android:id="@+id/play_audio_compose_switch"
+            android:text="@string/play_audio_compose_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playAudioCompose"
+            />
+
+        <Button
+            android:id="@+id/capture_event_audio_switch"
+            android:text="@string/capture_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="captureEventAudio"
+            />
+
+        <Button
+            android:id="@+id/capture_event_location_switch"
+            android:text="@string/capture_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="captureEventLocation"
+            />
+
+        <Button
+            android:id="@+id/copy_event_audio_switch"
+            android:text="@string/copy_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="copyEventAudio"
+            />
+
+        <Button
+            android:id="@+id/copy_event_location_switch"
+            android:text="@string/copy_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="copyEventLocation"
+            />
+
+        <Button
+            android:id="@+id/create_event_audio_switch"
+            android:text="@string/create_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createEventAudio"
+            />
+
+        <Button
+            android:id="@+id/create_event_location_switch"
+            android:text="@string/create_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createEventLocation"
+            />
+
+        <Button
+            android:id="@+id/modify_event_audio_switch"
+            android:text="@string/modify_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="modifyEventAudio"
+            />
+
+        <Button
+            android:id="@+id/modify_event_location_switch"
+            android:text="@string/modify_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="modifyEventLocation"
+            />
+
+        <Button
+            android:id="@+id/indirect_capture_event_audio_switch"
+            android:text="@string/indirect_capture_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="indirectCaptureEventAudio"
+            />
+
+        <Button
+            android:id="@+id/indirect_capture_event_location_switch"
+            android:text="@string/indirect_capture_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="indirectCaptureEventLocation"
+            />
+
+        <Button
+            android:id="@+id/clever_event_audio_switch"
+            android:text="@string/clever_event_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cleverEventAudio"
+            />
+
+        <Button
+            android:id="@+id/clever_event_location_switch"
+            android:text="@string/clever_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cleverEventLocation"
+            />
+
+        <Button
+            android:id="@+id/clever_click_audio_switch"
+            android:text="@string/clever_click_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cleverClickAudio"
+            />
+
+        <Button
+            android:id="@+id/clever_click_location_switch"
+            android:text="@string/clever_click_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cleverClickLocation"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

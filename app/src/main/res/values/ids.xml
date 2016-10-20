@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Validation options -->
+    <item name="toggle_progclick_validation_id" type="id" />
+    <item name="toggle_motion_event_validation_id" type="id" />
+    <item name="toggle_filter_obscured_validation_id" type="id" />
+    <item name="toggle_button_validation_id" type="id" />
+    <item name="validation_interval_picker_id" type="id" />
+    <item name="invalidation_length_picker_id" type="id" />
+
+    <!-- ACG fragments -->
+    <item name="location_acg_fragment_id" type="id" />
+    <item name="audio_acg_fragment_id" type="id" />
+    <item name="play_audio_acg_fragment_id" type="id" />
+
+    <!-- Malicious fragment -->
+    <item name="malicious_fragment_id" type="id" />
+
+    <!-- Main activity buttons -->
+    <item name="audio_switch" type="id"/>
+    <item name="location_switch" type="id"/>
+
+    <item name="prog_click_location_switch" type="id" />
+    <item name="prog_click_audio_switch" type="id" />
+    <item name="prog_click_indirect_location_switch" type="id" />
+    <item name="prog_click_indirect_audio_switch" type="id" />
+    <item name="prog_click_cheating_location" type="id" />
+    <item name="prog_click_cheating_audio" type="id" />
+
+    <item name="very_indirect_location_switch" type="id" />
+    <item name="very_indirect_audio_switch" type="id" />
+    <item name="super_cheating_location_switch" type="id" />
+    <item name="super_cheating_audio_switch" type="id" />
+
+    <item name="indirect_outside_location_switch" type="id"/>
+    <item name="indirect_outside_audio_switch" type="id"/>
+    <item name="cheating_outside_location_switch" type="id"/>
+    <item name="cheating_outside_audio_switch" type="id"/>
+
+    <item name="very_indirect_outside_location_switch" type="id"/>
+    <item name="very_indirect_outside_audio_switch" type="id"/>
+    <item name="super_cheating_outside_location_switch" type="id"/>
+    <item name="super_cheating_outside_audio_switch" type="id"/>
+
+    <item name="override_location_switch" type="id"/>
+    <item name="override_audio_switch" type="id"/>
+    <item name="indirect_override_location_switch" type="id"/>
+    <item name="indirect_override_audio_switch" type="id"/>
+    <item name="cheating_override_location_switch" type="id"/>
+    <item name="cheating_override_audio_switch" type="id"/>
+
+    <item name="very_indirect_override_location_switch" type="id"/>
+    <item name="very_indirect_override_audio_switch" type="id"/>
+    <item name="super_cheating_override_location_switch" type="id"/>
+    <item name="super_cheating_override_audio_switch" type="id"/>
+
+    <item name="cover_button_location_switch" type="id" />
+    <item name="cover_button_audio_switch" type="id" />
+
+    <item name="transparent_button_location_switch" type="id" />
+    <item name="transparent_button_audio_switch" type="id" />
+
+    <item name="disguise_button_location_switch" type="id" />
+    <item name="disguise_button_audio_switch" type="id" />
+    <item name="small_button_location_switch" type="id" />
+    <item name="small_button_audio_switch" type="id" />
+    <item name="bottom_button_location_switch" type="id" />
+    <item name="bottom_button_audio_switch" type="id" />
+
+    <item name="timing_button_location_switch" type="id" />
+    <item name="timing_button_audio_switch" type="id" />
+
+    <item name="location_direct_switch" type="id"/>
+    <item name="wrapped_location_direct_switch" type="id"/>
+    <item name="audio_direct_switch" type="id"/>
+
+    <item name="audio_compose_switch" type="id"/>
+    <item name="play_audio_compose_switch" type="id"/>
+
+    <item name="capture_event_audio_switch" type="id"/>
+    <item name="capture_event_location_switch" type="id"/>
+    <item name="copy_event_audio_switch" type="id"/>
+    <item name="copy_event_location_switch" type="id"/>
+    <item name="create_event_audio_switch" type="id"/>
+    <item name="create_event_location_switch" type="id"/>
+    <item name="modify_event_audio_switch" type="id"/>
+    <item name="modify_event_location_switch" type="id"/>
+
+    <item name="indirect_capture_event_audio_switch" type="id"/>
+    <item name="indirect_capture_event_location_switch" type="id"/>
+    <item name="clever_event_audio_switch" type="id"/>
+    <item name="clever_event_location_switch" type="id"/>
+    <item name="clever_click_audio_switch" type="id"/>
+    <item name="clever_click_location_switch" type="id"/>
+
+    <!-- Activity buttons -->
+    <item name="location_later_button_id" type="id"/>
+    <item name="text_view_id" type="id"/>
+    <item name="audio_playback_button_id" type="id"/>
+    <item name="malicious_disguised_button_id" type="id"/>
+    <item name="malicious_disguised_button_id_2" type="id" />
+    <item name="malicious_disguised_button_id_3" type="id" />
+    <item name="malicious_disguised_button_id_4" type="id" />
+    <item name="malicious_disguised_button_id_5" type="id" />
+    <item name="location_direct_button_id" type="id"/>
+    <item name="audio_direct_button_id" type="id"/>
+
+    <!-- Frames for clickjacking -->
+    <item name="clickjack_frame_id" type="id" />
+
+    <!-- Spinner -->
+    <item name="spinner_id" type="id"/>
+
+</resources>

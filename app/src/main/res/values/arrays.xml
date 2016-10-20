@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_methods">
+        <item>CREATE_FROM_PARCEL</item>
+        <item>OFFSET_LOCATION</item>
+        <item>TRANSFORM</item>
+        <item>ADD_BATCH</item>
+        <item>POST_DELAYED</item>
+        <item>OBTAIN_NO_HISTORY</item>
+        <item>CALL_ON_CLICK</item>
+        <item>ON_KEY_DOWN</item>
+        <item>ON_KEY_UP</item>
+        <item>ON_KEY_MULTIPLE</item>
+        <item>ON_GENERIC_MOTION_EVENT</item>
+        <item>ON_TOUCH_EVENT</item>
+        <item>REQUEST_UNBUFFERED_DISPATCH</item>
+        <item>DISPATCH_KEY_EVENT</item>
+        <item>DISPATCH_KEY_EVENT_PRE_IME</item>
+        <item>DISPATCH_KEY_SHORTCUT_EVENT</item>
+        <item>ON_KEY_LONG_PRESS</item>
+    </string-array>
+
+    <string-array name="click_methods">
+        <item>SET_PRESSED</item>
+        <item>CALL_ON_CLICK</item>
+        <item>PERFORM_LONG_CLICK</item>
+        <item>CANCEL_LONG_PRESS</item> 
+        <item>SET_TOUCH_DELEGATE</item> 
+        <item>DISPATCH_UNHANDLED_MOVE</item> 
+        <item>DISPATCH_NESTED_PRE_SCROLL</item> 
+        <item>DISPATCH_NESTED_SCROLL</item> 
+        <item>DISPATCH_NESTED_FLING</item> 
+        <item>DISPATCH_NESTED_PRE_FLING</item> 
+        <item>DISPATCH_DRAG_EVENT</item> 
+        <item>ON_CREATE_INPUT_CONNECTION</item> 
+        <item>ON_DRAG_EVENT</item> 
+        <item>SET_HOVERED</item> 
+        <item>ON_HOVER_CHANGED</item> 
+        <item>PERFORM_CONTEXT_CLICK</item> 
+        <item>PERFORM_HAPTIC_FEEDBACK</item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.acg.lib.app"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+// By default, don't run SPARTA. To run SPARTA, run ../gradlew compileDebugJavaWithJavac -PrunSparta=true
+def runSparta = project.properties['runSparta'] ?: false
+
+dependencies {
+    // Support both options and env vars
+    def checkerFrameworkDir = System.env.CHECKERFRAMEWORK == null ?
+            System.getProperty("CHECKERFRAMEWORK") + "/checker/dist" : "$System.env.CHECKERFRAMEWORK/checker/dist"
+
+    def spartaDir = System.env.SPARTA_CODE == null ?
+            System.getProperty("SPARTA_CODE") : "$System.env.SPARTA_CODE"
+
+    if (runSparta) {
+        // checkerframework
+        compile fileTree(dir: checkerFrameworkDir, include: ['*.jar'])
+    }
+
+    // sparta
+    compile fileTree(dir: spartaDir, include: ['*.jar'])
+
+    compile(name: 'ACG Library-release', ext:'aar')
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+}
+
+if (runSparta) {
+    allprojects {
+        // SPARTA integration
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile).all {
+                options.debug = true
+                options.compilerArgs = [
+                        '-Awarns', // Treat checker errors as warnings for now
+                        '-processor', 'sparta.checkers.FlowChecker',
+                        '-AflowPolicy=flow/flow-policy',
+                        '-AprintErrorStack'
+                ]
+                options.bootClasspath = System.getProperty("sun.boot.class.path") + ":" + options.bootClasspath
+                options.fork = true
+                options.forkOptions.executable = "$System.env.CHECKERFRAMEWORK/checker/bin/javac"
+            }
+        }
+    }
+}
+
+
+

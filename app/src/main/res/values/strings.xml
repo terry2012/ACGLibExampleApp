@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">EvilApp</string>
+
+    <string name="toggle_progclick_validation">Enable Programmatic Click Validation</string>
+    <string name="toggle_motion_event_validation">Enable Motion Event Validation</string>
+    <string name="toggle_filter_obscured_validation">Enable Obscured View Event Filtering</string>
+    <string name="toggle_button_validation">Enable Button UI Validation</string>
+    <string name="validation_interval_picker">Random Validation Interval (ms)</string>
+    <string name="invalidation_length">Invalidation Length (ms)</string>
+
+    <string name="location_later_button">Tell Me Where I Am!</string>
+    <string name="malicious_disguised_button">Do Nothing</string>
+
+    <string name="audio_playback_button">Play Audio</string>
+
+    <string name="location">Good Location Activity</string>
+    <string name="audio">Good Audio Activity</string>
+
+    <string name="prog_click_location">Programmatic Click: Location</string>
+    <string name="prog_click_audio">Programmatic Click: Audio</string>
+    <string name="prog_click_indirect_location">Indirect Click: Location</string>
+    <string name="prog_click_indirect_audio">Indirect Click: Audio</string>
+    <string name="prog_click_cheating_location">Programmatic Indirect Click: Location</string>
+    <string name="prog_click_cheating_audio">Programmatic Indirect Click: Audio</string>
+
+    <string name="very_indirect_location">Very Indirect Click: Location</string>
+    <string name="very_indirect_audio">Very Indirect Click: Audio</string>
+    <string name="super_cheating_location">Programmatic Very Indirect Click: Location</string>
+    <string name="super_cheating_audio">Programmatic Very Indirect Click: Audio</string>
+
+    <string name="indirect_outside_location">Indirect Click (Outside Listeners): Location</string>
+    <string name="indirect_outside_audio">Indirect Outside Click (Outside Listeners): Audio</string>
+    <string name="cheating_outside_location">Programmatic Indirect Click (Outside Listeners): Location</string>
+    <string name="cheating_outside_audio">Programmatic Indirect Outside Click (Outside Listeners): Audio</string>
+
+    <string name="very_indirect_outside_location">Very Indirect Click (Outside Listeners): Location</string>
+    <string name="very_indirect_outside_audio">Very Indirect Outside Click (Outside Listeners): Audio</string>
+    <string name="super_cheating_outside_location">Programmatic Very Indirect Click (Outside Listeners): Location</string>
+    <string name="super_cheating_outside_audio">Programmatic Very Indirect Outside Click (Outside Listeners): Audio</string>
+
+    <string name="override_location">Programmatic Click (Overriding ACG): Location</string>
+    <string name="override_audio">Programmatic Click (Overriding ACG): Audio</string>
+    <string name="indirect_override_location">Indirect Click (Overriding ACG): Location</string>
+    <string name="indirect_override_audio">Indirect Click (Overriding ACG): Audio</string>
+    <string name="cheating_override_location">Programmatic Indirect Click (Overriding ACG): Location</string>
+    <string name="cheating_override_audio">Programmatic Indirect Click (Overriding ACG): Audio</string>
+
+    <string name="very_indirect_override_location">Very Indirect Click (Overriding ACG): Location</string>
+    <string name="very_indirect_override_audio">Very Indirect Outside Click (Overriding ACG): Audio</string>
+    <string name="super_cheating_override_location">Programmatic Very Indirect Click (Overriding ACG): Location</string>
+    <string name="super_cheating_override_audio">Programmatic Very Indirect Outside Click (Overriding ACG): Audio</string>
+
+    <string name="cover_button_location">Tapjacking: Location</string>
+    <string name="cover_button_audio">Tapjacking: Audio</string>
+
+    <string name="transparent_button_location">Transparent Button: Location</string>
+    <string name="transparent_button_audio">Transparent Button: Audio</string>
+
+    <string name="disguise_button_location">Disguised Button: Location</string>
+    <string name="disguise_button_audio">Disguised Button: Audio</string>
+    <string name="small_button_location">Small Button: Location</string>
+    <string name="small_button_audio">Small Button: Audio</string>
+    <string name="bottom_button_location">Bottom Button: Location</string>
+    <string name="bottom_button_audio">Bottom Button: Audio</string>
+
+    <string name="timing_button_location">Bait-and-Switch: Location</string>
+    <string name="timing_button_audio">Bait-and-Switch: Audio</string>
+
+    <string name="location_direct_button">Get Location Directly (No ACG)</string>
+    <string name="wrapped_location_direct_button">Get Location Directly and Wrap (No ACG)</string>
+    <string name="audio_direct_button">Record Audio Directly (No ACG)</string>
+
+    <string name="audio_compose_button">Compose Audio ACG With MediaPlayer</string>
+    <string name="play_audio_compose_button">Compose Play Audio ACG With MediaRecorder</string>
+
+    <string name="capture_event_audio">Capture Event: Audio</string>
+    <string name="capture_event_location">Capture Event: Location</string>
+    <string name="copy_event_audio">Copy Event: Audio</string>
+    <string name="copy_event_location">Copy Event: Location</string>
+    <string name="create_event_audio">Create Event: Audio</string>
+    <string name="create_event_location">Create Event: Location</string>
+    <string name="modify_event_audio">Modify Event: Audio</string>
+    <string name="modify_event_location">Modify Event: Location</string>
+    <string name="indirect_capture_event_audio">Capture Event (Indirect): Audio</string>
+    <string name="indirect_capture_event_location">Capture Event (Indirect): Location</string>
+
+    <string name="clever_event_audio">Clever Event: Audio</string>
+    <string name="clever_event_location">Clever Event: Location</string>
+    <string name="clever_click_audio">Clever Click: Audio</string>
+    <string name="clever_click_location">Clever Click: Location</string>
+</resources>
+
+

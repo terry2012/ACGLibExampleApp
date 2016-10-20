@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout android:id="@+id/clickjack_frame_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clipChildren="false">
+        <fragment android:name="com.example.activities.clickjacking.MaliciousFragment"
+                  android:id="@+id/malicious_fragment_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"/>
+
+        <fragment android:name="com.acg.lib.impl.LocationACG"
+                  android:id="@+id/location_acg_fragment_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <Button
+            android:id="@id/location_later_button_id"
+            android:text="@string/location_later_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clickjack_frame_id"/>
+
+    <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_later_button_id"/>
+
+</RelativeLayout>

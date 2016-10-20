@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout android:id="@+id/clickjack_frame_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clipChildren="false">
+        <fragment android:name="com.acg.lib.impl.AudioACG"
+                  android:id="@id/audio_acg_fragment_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"/>
+
+        <fragment android:name="com.example.activities.clickjacking.MaliciousFragment"
+                  android:id="@+id/malicious_fragment_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <fragment android:name="com.acg.lib.impl.PlayAudioACG"
+              android:id="@id/play_audio_acg_fragment_id"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/clickjack_frame_id"/>
+
+    <Button
+        android:id="@id/malicious_disguised_button_id_2"
+        android:text="@string/malicious_disguised_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_audio_acg_fragment_id"/>
+
+</RelativeLayout>

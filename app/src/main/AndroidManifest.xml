@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.acg.EvilApp"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="23"/>
+    <application android:label="@string/app_name">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.example.activities.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.activities.good.LocationActivity" android:label="@string/app_name"/>
+        <activity android:name="com.example.activities.good.AudioActivity" android:label="@string/app_name"/>
+
+        <activity android:name="com.example.activities.progclicks.simple.ProgClickAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.ProgClickLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.IndirectProgClickLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.IndirectProgClickAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.CheatingAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.CheatingLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.complex.VeryIndirectLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.VeryIndirectAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.SuperCheatingAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.SuperCheatingLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.simple.CheatingOutsideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.simple.CheatingOutsideLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.simple.IndirectOutsideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.simple.IndirectOutsideLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.complex.SuperCheatingOutsideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.complex.SuperCheatingOutsideLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.complex.VeryIndirectOutsideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.outsidelisteners.complex.VeryIndirectOutsideLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.IndirectOverrideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.IndirectOverrideLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.OverrideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.OverrideLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.CheatingOverrideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.simple.CheatingOverrideLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.overrideacg.complex.VeryIndirectOverrideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.complex.VeryIndirectOverrideLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.complex.SuperCheatingOverrideAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.overrideacg.complex.SuperCheatingOverrideLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.clickjacking.cover.CoverButtonAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.cover.CoverButtonLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.clickjacking.transparent.TransparentButtonLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.transparent.TransparentButtonAudioActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.clickjacking.disguise.DisguiseButtonLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.disguise.DisguiseButtonAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.disguise.SmallButtonLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.disguise.SmallButtonAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.disguise.BottomButtonLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.disguise.BottomButtonAudioActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.clickjacking.timing.TimingButtonLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.clickjacking.timing.TimingButtonAudioActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.simple.events.CaptureEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.CaptureEventLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.CopyEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.CopyEventLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.CreateEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.CreateEventLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.ModifyEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.simple.events.ModifyEventLocationActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.progclicks.complex.events.IndirectCaptureEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.events.IndirectCaptureEventLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.events.CleverEventAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.events.CleverEventLocationActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.CleverClickAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.progclicks.complex.CleverClickLocationActivity" android:label="@string/app_name" />
+
+        <!-- Activities that ought to fail SPARTA checks, but should work at runtime -->
+        <activity android:name="com.example.activities.sparta.CallLocationServiceActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.sparta.WrapCallLocationServiceActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.sparta.CallMediaRecorderActivity" android:label="@string/app_name" />
+
+        <activity android:name="com.example.activities.composition.ComposeAudioActivity" android:label="@string/app_name" />
+        <activity android:name="com.example.activities.composition.ComposePlayAudioActivity" android:label="@string/app_name" />
+</application>
+</manifest>
